@@ -3,6 +3,7 @@
     "",
     "\\dist",
     "\\dist\\css",
+    "\\dist\\img\\projects",
     "\\scss"
   ],
   "SelectedNode": "\\dist\\index.html",
