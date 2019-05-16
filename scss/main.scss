@@ -72,6 +72,7 @@ main{
 
     
 }
+
 .view-more{
     display: inline-block;
     margin-top:3rem;
@@ -92,9 +93,7 @@ main{
         background: #000;
         color:#fff;
         transition: all 0.3s;
-    }
-    
-    
+    }  
 }
 .icons{
     margin-top:1rem;
@@ -111,41 +110,112 @@ main{
 }
 
 .about-info {
-    display: grid;
-    grid-gap: 30px;
-    grid-template-areas: 'bioimage bio bio' 'job1 job2 job3';
-    grid-template-columns: repeat(3, 1fr);
+    margin-top: 3rem;
+    display:flex;
+    justify-content:space-between;
+    max-width: 800px;
+    width: 100%;
+    box-sizing: border-box;
 
     .bio-image {
-        grid-area: bioimage;
+        flex:1;
+        order:1;
         margin: auto;
         border-radius: 50%;
         border: $secondary-color 3px solid;
+
     }
 
     .bio {
-        grid-area: bio;
-        font-size: 1.5rem;
-    }
+        margin-left:4rem;
+        flex:2;
+        order:2;
+        }
+}
 
+.job {
+    display:flex;
+    justify-content: center;
+    margin-top: 10px;
+    background: lighten($primary-color, 5s);
+    padding: 0.5rem;
+    border-bottom: $secondary-color 5px solid;
+    font-size: 20pt;
     .job-1 {
-        grid-area: job1;
-    }
-
-    .job-2 {
-        grid-area: job2;
-    }
-
-    .job-3 {
-        grid-area: job3;
-    }
-
-    .job {
-        background: lighten($primary-color, 5s);
-        padding: 0.5rem;
-        border-bottom: $secondary-color 5px solid;
+        flex:3;
+        order:3;
+        
     }
 }
+
+
+.animated {
+    margin:0em;
+}
+.slide-in-right{
+    animation: 1s ease infinite pulse;
+
+}
+
+
+.flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.bar {
+    color: #666;
+    height: 22px;
+    position: relative;
+    background-color: #eee;
+    margin: 0 0 12px 0;
+    align-items: flex-end;
+    font-size: 8pt;
+
+    .tag {
+        top: 0;
+        left: 0;
+        position: absolute;
+        background-color: #0764f7;
+        color: #fff;
+        height: 100%;
+        width: 110px;
+        width: 70px;
+    }
+    .fill {
+        top: 0;
+        left: 0;
+        position: absolute;
+        background-color: #032965;
+        padding: 0;
+        opacity: 1;
+    }
+}
+
+span{
+    z-index: 1;
+    padding: 0 15px 0 0;
+}
+
+.flex-50-gt-sm {
+    display: block;
+}
+
+
+.bold {
+    font-family: 'Trebuchet MS';
+}
+
+.bars-wrap{
+    //margin: 300px auto 0 auto;
+    width: calc(100% - 15px);
+    max-width: 90%;
+}
+
+
+
+
 
 hr{
   border-style:solid;
@@ -155,6 +225,7 @@ hr{
 
 // Work/Projects
 .projects {
+    margin-top: 3rem;
     display: grid;
     grid-gap: 0.7rem;
     grid-template-columns: repeat(3, 1fr);

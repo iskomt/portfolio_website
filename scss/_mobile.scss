@@ -3,12 +3,29 @@
     .projects {
         grid-template-columns: repeat(4, 1fr);
     }
+    .bar {
+        height: 28px;
+        margin: 0 0 15px 0;
+        font-size: 11pt;
+        .tag {
+            width: 110px;
+        }
+    }
+    
 }
 
 //Desktops & Laptops
 @include mediaLg {
     .projects {
         grid-template-columns: repeat(3, 1fr);
+    }
+    .bar {
+        height: 28px;
+        margin: 0 0 15px 0;
+        font-size: 11pt;
+        .tag {
+            width: 110px;
+        }
     }
 }
 
@@ -63,6 +80,21 @@
         grid-template-columns: 1fr;
     }
 
+    .bar {
+        height: 28px;
+        margin: 0 0 15px 0;
+        font-size: 11pt;
+        .tag {
+            width: 110px;
+        }
+    }
+    .about-info{
+        flex-direction: column;
+
+        .bio{
+            margin-top:2rem;
+        }
+    }
     .projects {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -79,7 +111,23 @@
         .lg-heading {
             margin-top: 1rem;
 
-            font-size: 5rem;
+            font-size: 3rem;
+        }
+    }
+    .bar {
+        height: 28px;
+        margin: 0 0 15px 0;
+        font-size: 11pt;
+        .tag {
+            width: 110px;
+        }
+    }
+
+    .about-info{
+        flex-direction: column;
+
+        .bio{
+            margin-top:2rem;
         }
     }
 
