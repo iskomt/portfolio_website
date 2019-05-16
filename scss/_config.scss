@@ -22,7 +22,7 @@ $colors: (
         &#bg-img {
             background: $home-image;
             background-attachment: fixed;
-            background-size: cover;
+            background-size: repeat;
 
             /*&:after //{
                 content: '';
