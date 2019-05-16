@@ -101,9 +101,10 @@ body {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   line-height: 1.5; }
   body#bg-img {
+    background: url(../img/background.png);
     background-attachment: fixed;
     background-size: cover;
-    /*&:after {
+    /*&:after //{
                 content: '';
                 position: absolute;
                 top: 0;
