@@ -1,6 +1,6 @@
 .menu-btn {
   position: absolute;
-  background-color: #fff;
+  background: #000;
   z-index: 3;
   right: 35px;
   top: 35px;
@@ -10,8 +10,10 @@
     width: 28px;
     height: 3px;
     margin: 0 0 5px 0;
-    background: #000;
+    background: #fff;
     transition: all 0.5s ease-out; }
+  .menu-btn.change-color {
+    background: #000; }
   .menu-btn.close {
     transform: rotate(180deg); }
     .menu-btn.close .btn-line:nth-child(1) {
@@ -151,8 +153,14 @@ header {
 
 main {
   padding: 15rem;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
   text-align: center;
+  align-items: center;
   min-height: calc(100vh - 60px); }
+  main .about-title {
+    flex: 1; }
   main#home {
     overflow: hidden; }
     main#home h1 {
@@ -192,20 +200,22 @@ main {
 .about-info {
   margin-top: 3rem;
   display: flex;
-  justify-content: space-between;
-  max-width: 800px;
+  justify-content: center;
+  max-width: 100rem;
   width: 100%;
   box-sizing: border-box; }
   .about-info .bio-image {
     flex: 1;
     order: 1;
-    margin: auto;
     border-radius: 50%;
-    border: #032965 3px solid; }
+    border: #032965 3px solid;
+    max-width: 20rem; }
   .about-info .bio {
     margin-left: 4rem;
     flex: 2;
-    order: 2; }
+    order: 2;
+    align-content: center;
+    max-width: 50rem; }
 
 .job {
   display: flex;
@@ -410,6 +420,7 @@ hr {
   .about-info {
     flex-direction: column; }
     .about-info .bio {
-      margin-top: 2rem; }
+      margin-top: 2rem;
+      margin-left: 0rem; }
   .projects {
     grid-template-columns: 1fr; } }

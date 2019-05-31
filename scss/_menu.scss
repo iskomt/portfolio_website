@@ -1,7 +1,7 @@
 //Menu Button
 .menu-btn {
     position: absolute;
-    background-color: #fff;
+    background: #000;
     z-index: 3;
     right: 35px;
     top: 35px;
@@ -12,8 +12,13 @@
         width: 28px;
         height: 3px;
         margin: 0 0 5px 0;
-        background: set-text-color($primary-color);
+        //background: set-text-color($primary-color);
+        background: #fff;
         @include easeOut;
+    }
+
+    &.change-color{
+        background: #000;
     }
     // Rotate Into X With Menu Lines
     &.close {
@@ -22,6 +27,7 @@
         .btn-line {
             // Line 1 - Rotate
             &:nth-child(1) {
+                
                 transform: rotate(45deg) translate(5px,5px);
             }
             // Line 2 - Hide
